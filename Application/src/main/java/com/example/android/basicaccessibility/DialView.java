@@ -151,7 +151,6 @@ public class DialView extends View {
             event.setItemCount(SELECTION_COUNT);
             event.setCurrentItemIndex(mActiveSelection);
         }
-
         // When a user first focuses on our view, we'll also read out some simple instructions to
         // make it clear that this is an interactive element.
         if (eventType == AccessibilityEvent.TYPE_VIEW_ACCESSIBILITY_FOCUSED) {
@@ -188,7 +187,6 @@ public class DialView extends View {
 
     /**
      * Render view content.
-     *
      * <p>We render an outer grey circle to serve as our "dial", and then render a smaller black
      * circle to server as our indicator. The position for the indicator is determined based
      * on mActiveSelection.
@@ -217,7 +215,6 @@ public class DialView extends View {
         float y = xyData[1];
         canvas.drawCircle(x, y, 20, mTextPaint);
     }
-
     /**
      * Compute the X/Y-coordinates for a label or indicator, given the position number and radius
      * where the label should be drawn.
