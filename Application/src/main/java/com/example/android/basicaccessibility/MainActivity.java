@@ -21,7 +21,6 @@ import android.os.Bundle;
 
 /**
  * Basic activity class.
- *
  * <p>Responsible for rendering layout, and displaying some toasts to give buttons feedback.
  * There's nothing terribly interesting in this class. All the interesting stuff is in
  * res/layout/activity_main.xml and {@link DialView}.
